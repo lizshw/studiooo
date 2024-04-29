@@ -1,0 +1,87 @@
+<html>
+
+    <head>
+        <title>
+            Super Rocking Fun Time Website
+        </title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+        <style>
+            .row {
+                width: 730px;
+                margin: 10px auto 10px auto;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding: 20px;
+            }
+        </style>
+        
+        
+    </head>
+    <body>
+        <div class="row">
+            <div class="image-container"><img id="siren" src="img/sirenlogo1.png" height="200" width="200"
+                onmouseover= "this.src='img/sirenlogo2.png';"
+                onmouseout= "this.src='img/sirenlogo1.png';"/></div>
+            <div class="image-container"><img id="vampire" src="img/vampirelogo1.png" height="200" width="200"
+                onmouseover= "this.src='img/vampirelogo2.png';"
+                onmouseout= "this.src='img/vampirelogo1.png';"
+                /></div>
+            <div class="image-container"><img id="werewolf" src="img/werewolflogo1.png" height="200" width="200"
+                onmouseover= "this.src='img/werewolflogo2.png';"
+                onmouseout= "this.src='img/werewolflogo1.png';"
+                /></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="gnome" src="img/gnomelogo1.png" height="200" width="200"
+                onmouseover= "this.src='img/gnomelogo2.png';"
+                onmouseout= "this.src='img/gnomelogo1.png';"
+                /></div>
+            <div class="image-container"><img id="unicorn" src="img/unicornlogo1.png" height="200" width="200"
+                onmouseover= "this.src='img/unicornlogo2.png';"
+                onmouseout= "this.src='img/unicornlogo1.png';"/></div>
+            <div class="image-container"><img id="dragon" src="img/dragonlogo1.png" height="200" width="200"
+                onmouseover= "this.src='img/dragonlogo2.png';"
+                onmouseout= "this.src='img/dragonlogo1.png';"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="skeleton" src="img/skeletonlogo1.png" height="200" width="200"
+                onmouseover= "this.src='img/skeletonlogo2.png';"
+                onmouseout= "this.src='img/skeletonlogo1.png';"/></div>
+            <div class="image-container"><img id="fairy" src="img/fairylogo1.png" height="200" width="200"
+                onmouseover= "this.src='img/fairylogo2.png';"
+                onmouseout= "this.src='img/fairylogo1.png';"/></div>
+            <div class="image-container"><img id="pheonix" src="img/pheonixlogo1.png" height="200" width="200"
+                onmouseover= "this.src='img/pheonixlogo2.png';"
+                onmouseout= "this.src='img/pheonixlogo1.png';"/></div>
+        </div>
+
+        <script>
+            var sound1 = new buzz.sound("sound/siren.mp3");
+            var sound2 = new buzz.sound("sound/vampire.mp3");
+            var sound3 = new buzz.sound("sound/werewolf.mp3");
+            var sound4 = new buzz.sound("sound/gnome.mp3");
+            var sound5 = new buzz.sound("sound/unicorn.mp3");
+            var sound6 = new buzz.sound("sound/dragon.mp3");
+            var sound7 = new buzz.sound("sound/skeleton.mp3");
+            var sound8 = new buzz.sound("sound/fairy.mp3");
+            var sound9 = new buzz.sound("sound/phoenix.mp3");
+     
+            window.onload = function() {  
+                document.getElementById('siren').addEventListener('click', function () {sound1.play(); });  
+                document.getElementById('vampire').addEventListener('click', function () {sound2.play(); });
+                document.getElementById('werewolf').addEventListener('click', function () {sound3.play(); });
+                document.getElementById('gnome').addEventListener('click', function () {sound4.play(); });
+                document.getElementById('unicorn').addEventListener('click', function () {sound5.play(); }); 
+                document.getElementById('dragon').addEventListener('click', function () {sound6.play(); }); 
+                document.getElementById('skeleton').addEventListener('click', function () {sound7.play(); }); 
+                document.getElementById('fairy').addEventListener('click', function () {sound8.play(); }); 
+                document.getElementById('pheonix').addEventListener('click', function () {sound9.play(); });
+            }  
+        </script>
+    </body>
+</html>
